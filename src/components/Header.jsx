@@ -1,6 +1,6 @@
 import '../styles/Header.scss'
 import { Routes, Route, Link, NavLink, useLocation } from 'react-router'
-import logo from '../images/logo.webp'
+import logo from '../images/girlflix.png'
 
 function Header() {
   
@@ -15,11 +15,11 @@ function Header() {
   return (
   <section className="header">
     <div className="header__topbar">
-        <p className="header__topbar-left">Brag Space</p>
-        <img className="header__topbar-right-image" src={logo} alt="logo" />
+        <p className="header__topbar-left">Push Sisters</p>
+        {/* <img className="header__topbar-right-image" src={logo} alt="logo" /> */}
     </div>
     <div className="header__hero">
-        <h1 className="header__title">Brag Space</h1>
+    <img className="img__hero" src={logo} alt="logo" />
         <h2 className="header__subtitle">Escaparate en línea para recoger ideas a través de la tecnología</h2>
         {dinamicButton}
     </div>        

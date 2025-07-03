@@ -1,0 +1,127 @@
+.preview {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    color: #333;
+    box-sizing: border-box;
+  
+    .card__author {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+  
+      .card__authorPhoto {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #ccc;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 1rem;
+      }
+  
+      .card__job {
+        font-size: 0.9rem;
+        color: #888;
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
+  
+      .card__name {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  
+    .card__project {
+      .card__name {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 0.2rem;
+      }
+  
+      .card__slogan {
+        font-size: 1rem;
+        font-style: italic;
+        color: #555;
+        margin-bottom: 1rem;
+      }
+  
+      .card__descriptionTitle {
+        font-size: 0.95rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: #333;
+      }
+  
+      .card__description {
+        font-size: 0.9rem;
+        color: #444;
+        margin-bottom: 1rem;
+      }
+  
+      .card__technicalInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+  
+        .card__technologies {
+          font-size: 0.85rem;
+          color: #666;
+        }
+  
+        .icon {
+          text-decoration: none;
+          font-size: 0.9rem;
+          color: #0077cc;
+          transition: color 0.3s ease;
+  
+          &:hover {
+            color: #005999;
+          }
+        }
+      }
+    }
+  
+    // 🔽 Responsive: para pantallas pequeñas
+    @media (max-width: 600px) {
+      padding: 1.5rem;
+  
+      .card__authorPhoto {
+        width: 60px;
+        height: 60px;
+      }
+  
+      .card__name {
+        font-size: 1rem;
+      }
+  
+      .card__job {
+        font-size: 0.85rem;
+      }
+  
+      .card__project {
+        .card__name {
+          font-size: 1rem;
+        }
+  
+        .card__slogan,
+        .card__description,
+        .card__technologies,
+        .icon {
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+
+  

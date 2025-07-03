@@ -15,8 +15,8 @@ function Header() {
   return (
   <section className="header">
     <div className="header__topbar">
-        <p class="header__topbar-left">Brag Space</p>
-        <img class="header__topbar-right-image" src={logo} alt="logo" />
+        <p className="header__topbar-left">Brag Space</p>
+        <img className="header__topbar-right-image" src={logo} alt="logo" />
     </div>
     <div className="header__hero">
         <h1 className="header__title">Brag Space</h1>

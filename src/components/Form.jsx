@@ -1,4 +1,6 @@
- import React from 'react'/ export default function Form() {
+ import React from 'react';
+  import '../styles/Form.scss';
+  export default function Form() {
    return (
   <form className="addForm">
         <h2 className="title">Información</h2>

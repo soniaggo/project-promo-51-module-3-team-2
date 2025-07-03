@@ -1,7 +1,6 @@
 // TOPBAR
 
 .header__topbar {
-    background-color: red;
     display: flex;
     margin: 0;
     width: 100%;
@@ -18,11 +17,10 @@
 } 
 
 // HERO
-
 .header__hero {
-    background-color: blue;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
-
 .header__title {
     font-size: 3rem;
 }

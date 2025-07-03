@@ -1,14 +1,18 @@
 import { Routes, Route, Link, NavLink } from 'react-router'
 import './styles/App.scss'
+
 import Form from './components/Form.jsx'
 import Header from './components/Header.jsx'
 import ProjectsList from './components/ProjectsList.jsx'
+import CardPreview from './components/CardPreview.jsx'
 
 function App() {
 
   return (
     <>
       <Header/>
+    
+
     <Routes>
       <Route index path="/" element={<Form />} />
       <Route path="/proyectos" element={<ProjectsList />} />

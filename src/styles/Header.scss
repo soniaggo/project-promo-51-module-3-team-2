@@ -1,0 +1,38 @@
+// TOPBAR
+
+.header__topbar {
+    background-color: red;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__topbar-left {
+    font-size: 2rem;
+}
+
+.header__topbar img {
+    height: 100px;
+} 
+
+// HERO
+
+.header__hero {
+    background-color: blue;
+}
+
+.header__title {
+    font-size: 3rem;
+}
+
+.header__subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.header__button {
+    padding: 0.5rem;
+    margin: 1rem;
+}

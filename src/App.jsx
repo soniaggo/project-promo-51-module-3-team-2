@@ -1,13 +1,22 @@
-import { useState } from 'react'
+import { Routes, Route, Link, NavLink } from 'react-router'
 import './styles/App.scss'
 import Form from './components/Form.jsx'
+import Header from './components/Header.jsx'
+import ProjectsList from './components/ProjectsList.jsx'
 
 function App() {
 
   return (
     <>
-      <h1>Brag Space</h1>
-      <Form />
+      <Header/>
+    <Routes>
+      <Route index path="/" element={<Form />} />
+      <Route path="/proyectos" element={<ProjectsList />} />
+    </Routes>
+
+
+
+      
     </>
   )
 }

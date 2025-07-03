@@ -1,22 +1,24 @@
 import React from 'react'
 import '../styles/CardPreview.scss';
-function CardPreview() {
+import Form from './Form.jsx';
+
+function CardPreview( {pformData}) {
   return (
+
     <section className="preview">
           <div className="card__author">
             <div className="card__authorPhoto"></div>
             <p className="card__job">
-              Full stack Developer
+              {pformData.job}
             </p>
-            <h3 className="card__name">Emmelie Bjôrklund</h3>
+            <h3 className="card__name">{pformData.autor}</h3>
           </div>
           <div className="card__project">
-            <h3 className="card__name">Elegant Workspace</h3>
-            <p className="card__slogan">Diseños Exclusivos</p>
-            <h3 className="card__descriptionTitle">Product description</h3>
-            <p className="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, quos? Itaque, molestias eveniet laudantium adipisci vitae ratione</p>
+            <h3 className="card__name">{pformData.name}</h3>
+            <p className="card__slogan">{pformData.slogan}</p>
+            <p className="card__description">{pformData.desc}</p>
             <div className="card__technicalInfo">
-              <p className="card__technologies">React JS - HTML - CSS</p>
+              <p className="card__technologies">{pformData.technologies}</p>
               <a className="icon icon__www" href="#" title="Haz click para ver el proyecto online">
                 Web link
               </a>

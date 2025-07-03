@@ -11,22 +11,20 @@ function CardPreview( {pformData}) {
             <p className="card__job">
               {pformData.job}
             </p>
-            <h3 className="card__name">{pformData.autor}</h3>
+            <h3 className="card__name">{pformData.autor || 'Oliver Gato'}</h3>
           </div>
           <div className="card__project">
-            <h3 className="card__name">{pformData.name}</h3>
-            <p className="card__slogan">{pformData.slogan}</p>
-            <p className="card__description">{pformData.desc}</p>
+            <h3 className="card__name" > {pformData.name || 'Proyecto gatuno'} </h3>
+            <p className="card__slogan">{pformData.slogan || 'Miau'}</p>
+            <p className="card__description">{pformData.desc || 'Revolcarse por el suelo en invierno y en verano'}</p>
             <div className="card__technicalInfo">
-              <p className="card__technologies">{pformData.technologies}</p>
-              <a className="icon icon__www" href="#" title="Haz click para ver el proyecto online">
-                Web link
-              </a>
-              <a className="icon icon__github" href="#" title="Haz click para ver el código del proyecto">
-                GitHub link
+              <p className="card__technologies">{pformData.technologies || 'wiskas y latitas'}</p>
+              <a className="icon icon__www" href= {pformData.web || 'https://github.com/soniaggo/project-promo-51-module-3-team-2/'}  >🌐
+              </a></div>
+              
+              <a className="icon icon__github" href={pformData.repo || 'https://github.com/soniaggo/project-promo-51-module-3-team-2/'} title="Haz click para ver el código del proyecto"> 🖥️
               </a>
             </div>
-          </div>
       </section>
   )
 }

@@ -2,10 +2,13 @@
  import { useState } from 'react';
  import '../styles/Form.scss';
  import CardPreview from './CardPreview.jsx';
+ import PhotoProject from './PhotoProject.jsx';
 
- function Form({ pformData, psetFormData }) {
 
-    
+ function Form({ pformData, psetFormData, projectImage ,setProjectImage })
+   {
+
+  
 
   const handleChange = (ev) => {
     const { name, value } = ev.target; 
@@ -14,7 +17,16 @@
       [name]: value
     });
   };
-
+ const handleProjectImageUpload = (ev) => {
+    const file = ev.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setProjectImage(reader.result); 
+      };
+      reader.readAsDataURL(file);
+    }
+  };
 
    return (
         <form className="addForm">
@@ -33,8 +45,9 @@
           <input className="addForm__input" type="text" name="autor" id="autor" placeholder="Nombre" value={pformData.autor} onChange={handleChange}/>
           <input className="addForm__input" type="text" name="job" id="job" placeholder="Trabajo" value={pformData.job} onChange={handleChange}/>
         <fieldset className="addForm__group--upload"></fieldset>
-          <label htmlFor="image" className="button">Subir foto del proyecto</label>
-          <input className="addForm__hidden" type="file" name="image" id="image"/>
+           <label htmlFor="image" className="button">Subir foto del proyecto</label>
+           <input className="addForm__hidden" type="file" id="image" name="image"  onChange={handleProjectImageUpload} />
+          
           <label htmlFor="photo" className="button">Subir foto de la autora</label>
           <input className="addForm__hidden" type="file" name="photo" id="photo"/>
           <button className="button__large">Crear proyecto</button>

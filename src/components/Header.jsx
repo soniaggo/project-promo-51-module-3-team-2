@@ -1,6 +1,7 @@
 import '../styles/Header.scss'
 import { Routes, Route, Link, NavLink, useLocation } from 'react-router'
 import logo from '../images/girlflix.png'
+import sisters from '../images/push-sisters-sin-fondo.png'
 
 function Header() {
   
@@ -15,8 +16,7 @@ function Header() {
   return (
   <section className="header">
     <div className="header__topbar">
-        <p className="header__topbar-left">Push Sisters</p>
-        {/* <img className="header__topbar-right-image" src={logo} alt="logo" /> */}
+        <img className="header__topbar-right-image" src={sisters} alt="logo-sisters" />
     </div>
     <div className="header__hero">
     <img className="img__hero" src={logo} alt="logo" />

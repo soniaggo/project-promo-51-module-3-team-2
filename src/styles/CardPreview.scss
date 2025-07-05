@@ -65,14 +65,15 @@
     .card__job {
       font-size: 0.9rem;
       color: #bbb;
-      margin-top: 10px;
+      margin-top: 5px;
+      margin-left: 10px;
     }
 
     .card__name {
       font-size: 1.2rem;
       font-weight: bold;
       margin-top: 15px;
-      margin-left: 15px;
+      margin-left: 10px;
       margin-bottom:10px;
     }
   }
@@ -87,7 +88,7 @@
     .card__name {
       font-size: 1.4rem;
       font-weight: bold;
-      color: #eab308;
+      color: #e4b0f0;
       margin-bottom: 0.5rem;
     }
 
@@ -95,16 +96,13 @@
       font-style: italic;
       color: #ccc;
       margin-bottom: 1rem;
-    }
-
-    .card__descriptionTitle {
-      font-weight: 600;
-      font-size: 1rem;
-      margin-bottom: 0.3rem;
+      font-size: 0.8rem;
     }
 
     .card__description {
-      font-size: 1rem;
+      font-size: 0.7rem;
+      line-height: 1rem;
+      text-align: justify;
       color: #ddd;
       margin-bottom: 1rem;
     }
@@ -115,7 +113,7 @@
       gap: 0.9rem;
 
       .card__technologies {
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: #aaa;
       }
 
@@ -129,7 +127,7 @@
           text-decoration: none;
 
           &:hover {
-            color: #3b82f6;
+            transform: scale(1.1);
           }
         }
       }

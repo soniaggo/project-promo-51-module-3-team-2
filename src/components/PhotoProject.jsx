@@ -8,7 +8,7 @@ function PhotoProject({ image }) {
 
   return (
     <div className="photo-project">
-      <img src={image} alt="Vista previa del proyecto" style={{ maxWidth: '100%', borderRadius: '10px' }} />
+      <img src={image} alt="Vista previa del proyecto" />
     </div>
   );
 }

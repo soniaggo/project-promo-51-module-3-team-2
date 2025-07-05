@@ -157,15 +157,18 @@
   padding-top: 70px; // para dejar espacio a la claqueta
   text-align: center;
 
-  .card__authorPhoto {
-    width: 80px;
-    height: 80px;
-    background-color: #444;
-    border-radius: 50%;
-    margin: 1rem auto;
-    background-size: cover;
-    background-position: center;
-  }
+.card__authorPhoto {
+  width: 80px;          
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;   
+  overflow: hidden;     
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #ccc; 
+}
 
   .card__job {
     font-size: 0.9rem;

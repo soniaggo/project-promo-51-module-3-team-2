@@ -2,12 +2,19 @@ import React from 'react'
 import '../styles/CardPreview.scss';
 import Form from './Form.jsx';
 
-function CardPreview( {pformData}) {
+function CardPreview( {pformData,authorImage}) {
   return (
 
     <section className="preview">
           <div className="card__author">
-            <div className="card__authorPhoto"></div>
+           <div className="card__authorPhoto">
+           {authorImage ? (
+             <img src={authorImage} alt="Foto de la autora" className="card__authorImg" />
+            ) : (
+            <img src="/images/default-author.png" alt="Foto por defecto" className="card__authorImg" />
+        )}
+            </div>
+
             <p className="card__job">
               {pformData.job}
             </p>

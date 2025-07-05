@@ -5,7 +5,7 @@
  import PhotoProject from './PhotoProject.jsx';
 
 
- function Form({ pformData, psetFormData, projectImage ,setProjectImage })
+ function Form({ pformData, psetFormData, projectImage ,setProjectImage, authorImage, setAuthorImage })
    {
 
   
@@ -27,6 +27,16 @@
       reader.readAsDataURL(file);
     }
   };
+ const handleAuthorImageUpload = (ev) => {
+  const file = ev.target.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      setAuthorImage(reader.result); 
+    };
+    reader.readAsDataURL(file);
+  }
+};
 
    return (
         <form className="addForm">
@@ -49,7 +59,7 @@
            <input className="addForm__hidden" type="file" id="image" name="image"  onChange={handleProjectImageUpload} />
           
           <label htmlFor="photo" className="button">Subir foto de la autora</label>
-          <input className="addForm__hidden" type="file" name="photo" id="photo"/>
+          <input className="addForm__hidden" type="file" name="photo" id="photo" onChange={handleAuthorImageUpload} />
           <button className="button__large">Crear proyecto</button>
     </form>
   )

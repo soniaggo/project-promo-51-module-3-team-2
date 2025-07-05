@@ -21,6 +21,7 @@ function App() {
     job: ''
   }); 
    const [projectImage, setProjectImage] = useState(null);
+   const [authorImage, setAuthorImage] = useState('');
   return (
     <>
       
@@ -29,7 +30,8 @@ function App() {
           <>
             <Header /> 
             {projectImage && <PhotoProject image={projectImage} />} 
-            <CardPreview pformData={formData}/> <Form  pformData={formData} psetFormData={setFormData}projectImage={projectImage}
+            <CardPreview pformData={formData} authorImage={authorImage}/> <Form authorImage={authorImage}
+             setAuthorImage={setAuthorImage} pformData={formData} psetFormData={setFormData}projectImage={projectImage}
              setProjectImage={setProjectImage} />
           </>
           } />

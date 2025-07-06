@@ -1,7 +1,7 @@
 import '../styles/Header.scss'
 import { Routes, Route, Link, NavLink, useLocation } from 'react-router'
 import logo from '../images/girlflix.png'
-import sisters from '../images/push-sisters-sin-fondo.png'
+import sisters from '../images/sisters.png'
 
 function Header() {
   

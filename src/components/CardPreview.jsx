@@ -20,7 +20,7 @@ function CardPreview({ pformData, authorImage }) {
 
         <div className="card__project">
           <h3 className="card__name">{pformData.name || 'El diablo viste de Prada'}</h3>
-          <p className="card__slogan">{pformData.slogan || "«Los detalles de tu incompetencia no me interesan»"}</p>
+          <p className="card__slogan">{pformData.slogan ? `«${pformData.slogan}»` : "«Los detalles de tu incompetencia no me interesan»"}</p>
           <p className="card__description">{pformData.desc || 'Una joven periodista consigue el trabajo "soñado" como asistente de la poderosa editora de una revista de moda, pero pronto descubre que el glamour tiene un precio y debe decidir qué está dispuesta a sacrificar por triunfar.'}</p>
           <div className="card__technicalInfo">
             <p className="card__technologies">{pformData.technologies || 'Sátira dramática'}</p>

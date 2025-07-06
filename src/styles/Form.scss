@@ -111,18 +111,26 @@ textarea.addForm__input {
 }
 
 .button__large {
-  display: block;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  font-size: 1.1rem;
   background-color: #E01700; 
   color: white;
-  padding: 15px 25px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.2em;
-  margin-top: 30px;
+  margin: 30px auto; /* Auto centrado horizontal */
   transition: background-color 0.3s ease;
+  
+  /* NUEVOS AJUSTES */
+  width: 100%;             /* Que ocupe todo el ancho disponible */
+  max-width: 400px;        /* Pero no más de 400px, por ejemplo */
+  text-align: center;      /* Centrar el texto dentro, por si acaso */
+  white-space: nowrap;     /* Que no se corte en varias líneas */
 }
+
 
 .button__large:hover {
   background-color: #c21300; 

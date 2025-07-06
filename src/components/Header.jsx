@@ -11,7 +11,7 @@ function Header() {
   if (pathname.startsWith("/proyectos")) {
     dinamicButton = <NavLink to="/"><button className="header__button">Crear Proyecto</button></NavLink>;
   } else if (pathname === "/") {
-    dinamicButton = <NavLink to="/proyectos"><button className="header__button">Ver Proyectos</button></NavLink>;
+    dinamicButton = <NavLink to="/proyectos"><button className="header__button">Recomendaciones</button></NavLink>;
   }
   return (
   <section className="header">
@@ -20,7 +20,8 @@ function Header() {
     </div>
     <div className="header__hero">
     <img className="img__hero" src={logo} alt="logo" />
-        <h2 className="header__subtitle">Escaparate en línea para recoger ideas a través de la tecnología</h2>
+        {/* <p>Recomienda, recuerda y comparte</p> */}
+        <h2 className="header__subtitle">Historias que te marcaron, personajes que amas.</h2>
         {dinamicButton}
     </div>        
   </section>

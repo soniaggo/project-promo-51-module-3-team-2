@@ -1,18 +1,15 @@
 .photo-project {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
 
   img {
-    max-width: 85%;
+    max-width: 100%;
     height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-
-    &:hover {
-      transform: scale(1.02);
-    }
+    border-radius: 10px;
+    margin-top: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
 }
+

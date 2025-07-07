@@ -52,24 +52,36 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" index element={
-          <>
-            <Header />
-            {projectImage && <PhotoProject image={projectImage} />}
-            <CardPreview pformData={formData} authorImage={authorImage} />
-            <Form
-              authorImage={authorImage}
-              setAuthorImage={setAuthorImage}
-              pformData={formData}
-              psetFormData={setFormData}
-              projectImage={projectImage}
-              setProjectImage={setProjectImage}
-            />
-            <div className="reset-container">
-              <button className="button__reset" onClick={handleReset}>Borrar todo</button>
-            </div>
-          </>
-        } />
+        <Route
+          path="/"
+          index
+          element={
+            <>
+              <Header />
+              <div className="main-layout">
+                <div className="main-layout__left">
+                  <Form
+                    authorImage={authorImage}
+                    setAuthorImage={setAuthorImage}
+                    pformData={formData}
+                    psetFormData={setFormData}
+                    projectImage={projectImage}
+                    setProjectImage={setProjectImage}
+                  />
+                  <div className="reset-container">
+                    <button className="button__reset" onClick={handleReset}>Borrar todo</button>
+                  </div>
+                </div>
+
+                {/* Columna derecha: Claqueta y foto */}
+                <div className="main-layout__right">
+                  <CardPreview pformData={formData} authorImage={authorImage} />
+                  {projectImage && <PhotoProject image={projectImage} />}
+                </div>
+              </div>
+            </>
+          }
+        />
         <Route path="/proyectos" element={<><Header /><ProjectsList /></>} />
       </Routes>
     </>
@@ -77,4 +89,5 @@ function App() {
 }
 
 export default App;
+
 

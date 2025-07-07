@@ -1,11 +1,12 @@
 
 .form-container {
-  display: flex;
-  flex-wrap: wrap; 
-  gap: 30px; 
-  max-width: 1000px; 
+  display: grid;
+  grid-template-columns: max-content 1fr; 
+  gap: 0; 
+  max-width: 40%; 
+  align-items: baseline;
   margin: 40px auto;
-  padding: 20px;
+  padding-left: 60px;
   box-shadow: 0 0 5px rgba(227, 194, 240, 0.9);
 }
 

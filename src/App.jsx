@@ -72,8 +72,6 @@ function App() {
                     <button className="button__reset" onClick={handleReset}>Borrar todo</button>
                   </div>
                 </div>
-
-                {/* Columna derecha: Claqueta y foto */}
                 <div className="main-layout__right">
                   <CardPreview pformData={formData} authorImage={authorImage} />
                   {projectImage && <PhotoProject image={projectImage} />}

@@ -176,5 +176,6 @@ textarea.addForm__input {
 @media (max-width: 480px) {
   .addForm__2col {
     flex-direction: column;
+    min-width: 320px;
   }
 }

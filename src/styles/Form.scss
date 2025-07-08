@@ -122,14 +122,12 @@ textarea.addForm__input {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin: 30px auto; /* Auto centrado horizontal */
+  margin: 30px auto; 
   transition: background-color 0.3s ease;
-  
-  /* NUEVOS AJUSTES */
-  width: 100%;             /* Que ocupe todo el ancho disponible */
-  max-width: 400px;        /* Pero no más de 400px, por ejemplo */
-  text-align: center;      /* Centrar el texto dentro, por si acaso */
-  white-space: nowrap;     /* Que no se corte en varias líneas */
+  width: 100%;             
+  max-width: 400px;        
+  text-align: center;      
+  white-space: nowrap;    
 }
 
 

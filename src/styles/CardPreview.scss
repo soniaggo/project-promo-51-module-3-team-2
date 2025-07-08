@@ -28,16 +28,16 @@
 
   .card__content {
     display: flex;
-    flex-direction: row; // Asegura que los elementos estén en fila
-    justify-content: space-between; // Espacio entre los elementos
-    gap: 2rem; // Espaciado entre los elementos
+    flex-direction: row; 
+    justify-content: space-between; 
+    gap: 2rem; 
     padding-block: 35px;
-    padding-inline: 20px; // Espacio para la claqueta
-    flex-wrap: nowrap; // Evita que los elementos se envuelvan
+    padding-inline: 20px; 
+    flex-wrap: nowrap; 
   }
 
   .card__author {
-    width: 40%; // Ajusta el ancho para que se acomode junto al proyecto
+    width: 40%;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -80,7 +80,7 @@
   }
 
   .card__project {
-    width: 60%; // Ajusta el ancho para que se acomode junto al autor
+    width: 60%; 
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -138,14 +138,14 @@
 }
 @media (max-width: 480px) {
   .preview {
-    margin: 2 2px; /* Padding lateral para evitar que toque los bordes */
+    margin: 2 2px; 
     max-width: 100%;
     overflow-x: hidden;
   }
 
   .preview .card__content {
     flex-direction: column;
-    gap: 1rem; /* Reducir espacio entre bloques */
+    gap: 1rem; 
     padding-inline: 15px;
   }
 

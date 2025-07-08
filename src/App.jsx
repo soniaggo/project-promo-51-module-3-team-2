@@ -74,7 +74,8 @@ function App() {
                 </div>
                 <div className="main-layout__right">
                   <CardPreview pformData={formData} authorImage={authorImage} />
-                  {projectImage && <PhotoProject image={projectImage} />}
+                <PhotoProject image={projectImage} />
+
                 </div>
               </div>
             </>

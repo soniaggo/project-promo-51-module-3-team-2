@@ -133,6 +133,35 @@
         }
       }
     }
+    
+  }
+}
+@media (max-width: 480px) {
+  .preview {
+    margin: 2 2px; /* Padding lateral para evitar que toque los bordes */
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .preview .card__content {
+    flex-direction: column;
+    gap: 1rem; /* Reducir espacio entre bloques */
+    padding-inline: 15px;
+  }
+
+  .preview .card__author,
+  .preview .card__project {
+    width: 100%;
+  }
+
+  .preview .card__authorPhoto {
+    margin: 0 auto;
+  }
+
+  .preview .card__name,
+  .preview .card__job {
+    text-align: center;
+    margin-left: 0;
   }
 }
 

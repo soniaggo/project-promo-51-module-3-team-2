@@ -9,9 +9,9 @@ function Header() {
   let dinamicButton = null;
 
   if (pathname.startsWith("/proyectos")) {
-    dinamicButton = <NavLink to="/"><button className="header__button">Crear Proyecto</button></NavLink>;
+    dinamicButton = <NavLink to="/" className="header__button">Crear Proyecto</NavLink>;
   } else if (pathname === "/") {
-    dinamicButton = <NavLink to="/proyectos"><button className="header__button">Recomendaciones</button></NavLink>;
+    dinamicButton = <NavLink to="/proyectos" className="header__button">Recomendaciones</NavLink>;
   }
   return (
   <section className="header">

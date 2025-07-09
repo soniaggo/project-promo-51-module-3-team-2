@@ -1,4 +1,4 @@
-#🎬 GirlFlix
+# 🎬 GirlFlix
 Proyecto creado por Push Sisters
 
 GirlFlix es una aplicación web donde cada usuaria puede subir una "claqueta" (tarjeta personalizada) con su película o serie favorita, compartir sus gustos y descubrir recomendaciones de otras personas.

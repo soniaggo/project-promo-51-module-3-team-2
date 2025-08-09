@@ -14,12 +14,12 @@ function App() {
     return saved ? JSON.parse(saved).formData : {
       name: '',
       slogan: '',
-      repo: '',
+      link_reseñas: '',
       web: '',
-      technologies: '',
-      desc: '',
+      genero: '',
+      sinopsis: '',
       autor: '',
-      job: ''
+      rol_personaje: ''
     };
   });
 
@@ -28,9 +28,9 @@ function App() {
     return saved ? JSON.parse(saved).projectImage : null;
   });
 
-  const [authorImage, setAuthorImage] = useState(() => {
+  const [imagen_personaje, setAuthorImage] = useState(() => {
     const saved = localStorage.getItem('formState');
-    return saved ? JSON.parse(saved).authorImage : '';
+    return saved ? JSON.parse(saved).imagen_personaje : '';
   });
 
   const handleReset = () => {
@@ -38,12 +38,12 @@ function App() {
     setFormData({
       name: '',
       slogan: '',
-      repo: '',
+      link_reseñas: '',
       web: '',
-      technologies: '',
-      desc: '',
+      genero: '',
+      sinopsis: '',
       autor: '',
-      job: ''
+      rol_personaje: ''
     });
     setProjectImage(null);
     setAuthorImage('');
@@ -61,7 +61,7 @@ function App() {
               <div className="main-layout">
                 <div className="main-layout__left">
                   <Form
-                    authorImage={authorImage}
+                    imagen_personaje={imagen_personaje}
                     setAuthorImage={setAuthorImage}
                     pformData={formData}
                     psetFormData={setFormData}
@@ -73,7 +73,7 @@ function App() {
                   </div>
                 </div>
                 <div className="main-layout__right">
-                  <CardPreview pformData={formData} authorImage={authorImage} />
+                  <CardPreview pformData={formData} imagen_personaje={imagen_personaje} />
                 <PhotoProject image={projectImage} />
 
                 </div>

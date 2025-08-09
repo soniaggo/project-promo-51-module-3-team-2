@@ -63,7 +63,7 @@
       }
     }
 
-    .card__job {
+    .card__rol_personaje {
       font-size: 0.9rem;
       color: #bbb;
       margin-top: 5px;
@@ -93,14 +93,14 @@
       margin-bottom: 0.5rem;
     }
 
-    .card__slogan {
+    .card__frase_estrella {
       font-style: italic;
       color: #ccc;
       margin-bottom: 1rem;
       font-size: 0.8rem;
     }
 
-    .card__description {
+    .card__sinopsis {
       font-size: 0.7rem;
       line-height: 1rem;
       text-align: justify;
@@ -113,7 +113,7 @@
       flex-direction: column;
       gap: 0.9rem;
 
-      .card__technologies {
+      .card__genero {
         font-size: 1rem;
         color: #aaa;
       }
@@ -159,7 +159,7 @@
   }
 
   .preview .card__name,
-  .preview .card__job {
+  .preview .card__rol_personaje {
     text-align: center;
     margin-left: 0;
   }

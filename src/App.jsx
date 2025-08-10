@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './styles/App.scss';
 
 import Form from './components/Form.jsx';
@@ -7,6 +7,7 @@ import Header from './components/Header.jsx';
 import CardPreview from './components/CardPreview.jsx';
 import ProjectsList from './components/ProjectsList.jsx';
 import PhotoProject from './components/PhotoProject.jsx';
+import callToApi from './services/api'
 
 function App() {
   const [formData, setFormData] = useState(() => {
@@ -21,7 +22,18 @@ function App() {
       autor: '',
       rol_personaje: ''
     };
+
+    
   });
+
+    const [moviesListed, setMoviesListed] = useState([]);
+
+  useEffect(() => {
+    callToApi().then(data => {
+      setMoviesListed(data);
+    })
+
+  }, []);
 
   const [projectImage, setProjectImage] = useState(() => {
     const saved = localStorage.getItem('formState');
@@ -81,7 +93,7 @@ function App() {
             </>
           }
         />
-        <Route path="/proyectos" element={<><Header /><ProjectsList /></>} />
+        <Route path="/proyectos" element={<><Header /><ProjectsList moviesListed={moviesListed}/></>} />
       </Routes>
     </>
   );

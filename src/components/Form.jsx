@@ -71,7 +71,7 @@ function Form({ pformData, psetFormData, projectImage, setProjectImage, imagen_p
     };
     console.log(requestData)
 
-    fetch('http://localhost:4000/project/add', {
+    fetch('https://girlflix.onrender.com/project/add', {
       method: 'POST',
       body: JSON.stringify(requestData),
       headers: {
